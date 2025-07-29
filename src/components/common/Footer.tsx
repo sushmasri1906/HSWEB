@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import {
 	FaInstagram,
@@ -40,29 +41,29 @@ export default function Footer() {
 					<h3 className="text-xl font-semibold mb-4">Quick Links</h3>
 					<ul className="space-y-2 text-gray-400">
 						<li>
-							<a href="/" className="hover:text-white">
+							<Link href="/" className="hover:text-white">
 								Home
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/about" className="hover:text-white">
+							<Link href="/about" className="hover:text-white">
 								About
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/blog" className="hover:text-white">
+							<Link href="/blog" className="hover:text-white">
 								Blog
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/portfolio" className="hover:text-white">
+							<Link href="/portfolio" className="hover:text-white">
 								Portfolio
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/contact" className="hover:text-white">
+							<Link href="/contact" className="hover:text-white">
 								Contact
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>
@@ -99,21 +100,21 @@ export default function Footer() {
 				<div>© {new Date().getFullYear()} HSDev. All rights reserved.</div>
 				<div>
 					Developed by{" "}
-					<a
+					<Link
 						href="https://sushmasri.vercel.app"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-blue-500 ">
 						Sushmasri
-					</a>{" "}
+					</Link>{" "}
 					&{" "}
-					<a
+					<Link
 						href="https://harunath.vercel.app"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-blue-500 ">
 						Harunath
-					</a>
+					</Link>
 				</div>
 			</div>
 		</footer>

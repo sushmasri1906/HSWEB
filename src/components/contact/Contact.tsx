@@ -33,9 +33,9 @@ export default function Contact() {
 						<span className="text-[#1c00d3]">Next Big Project</span> with HSDev
 					</h2>
 					<p className="text-gray-300 text-base sm:text-lg">
-						Whether you're building a scalable platform, a powerful brand site,
-						or a seamless web app. HSDev is here to bring it to life. Share your
-						vision with us and let&apos;s make something remarkable.
+						Whether you&apos;re building a scalable platform, a powerful brand
+						site, or a seamless web app. HSDev is here to bring it to life.
+						Share your vision with us and let&apos;s make something remarkable.
 					</p>
 					<p className="text-gray-400 mt-4 text-sm sm:text-base">
 						Our team usually responds within 24 hours.
