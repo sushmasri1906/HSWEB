@@ -18,7 +18,6 @@ const testimonials = [
 		feedback:
 			"I'm really happy with how the Rolanplast website turned out. The design is clean, smooth, and interactive. The team was quick to respond, made all the changes I asked for, and made the whole process easy and stress-free.",
 		name: "Mahesh Devarakonda",
-
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1744695457/mahesh_vgalio.jpg",
 	},
@@ -35,11 +34,18 @@ export default function Testimonials() {
 					{testimonials.map((t, i) => (
 						<div
 							key={i}
-							className="bg-[#0e0e0e] text-white rounded-2xl border border-gray-800 shadow-md p-6 flex flex-col justify-between">
-							<div>
-								<div className="flex items-center gap-2 mb-4">
-									<span className="text-xl font-semibold">{t.rating}</span>
-									<div className="flex text-yellow-400">
+							className="bg-[#0a052a]  text-white rounded-2xl border border-gray-800 hover:border-[#1c00d3] hover:shadow-[0_0_20px_#1c00d3] transition duration-300 ease-in-out p-6 cursor-pointer">
+							<div className="flex items-center gap-4 mb-4">
+								<Image
+									src={t.image}
+									alt={t.name}
+									width={56}
+									height={56}
+									className="rounded-full object-cover"
+								/>
+								<div>
+									<p className="font-semibold text-lg">{t.name}</p>
+									<div className="flex items-center gap-1 text-yellow-400 text-sm">
 										{t.stars.map((s, idx) =>
 											s === 1 ? (
 												<FaStar key={idx} />
@@ -47,22 +53,15 @@ export default function Testimonials() {
 												<FaStarHalfAlt key={idx} />
 											) : null
 										)}
+										<span className="text-white ml-2">
+											{t.rating.toFixed(1)}
+										</span>
 									</div>
 								</div>
-								<p className="text-gray-300 italic mb-6">“{t.feedback}”</p>
 							</div>
-							<div className="flex items-center gap-4 border-t border-gray-700 pt-4">
-								<Image
-									src={t.image}
-									alt={t.name}
-									width={48}
-									height={48}
-									className="rounded-full"
-								/>
-								<div>
-									<p className="font-semibold">{t.name}</p>
-								</div>
-							</div>
+							<p className="text-gray-300 italic leading-relaxed">
+								“{t.feedback}”
+							</p>
 						</div>
 					))}
 				</div>

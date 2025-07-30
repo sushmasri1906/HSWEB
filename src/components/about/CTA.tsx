@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CTA() {
 	return (
-		<section className="bg-[#0b0b11] text-white px-6 sm:px-12 lg:px-20 py-28 relative overflow-hidden text-center">
+		<section className="bg-black text-white px-6 sm:px-12 lg:px-20 py-28 relative overflow-hidden text-center">
 			<div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
 				{/* Profile Image */}
 				<div className="w-24 h-24 mb-6 rounded-full overflow-hidden shadow-xl border-4 border-[#1c00d3]">
